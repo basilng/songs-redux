@@ -1,6 +1,5 @@
 import { combineReducers } from "redux";
 
-const { act } = require("react-dom/test-utils");
 const { selectSong } = require("../actions");
 
 const songsReducer = () => {
