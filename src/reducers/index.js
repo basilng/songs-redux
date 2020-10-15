@@ -1,3 +1,5 @@
+import { combineReducers } from "redux";
+
 const { act } = require("react-dom/test-utils");
 const { selectSong } = require("../actions");
 
@@ -29,3 +31,8 @@ const selectedSongReducer = (selectedSong = null, action) => {
 
   return selectSong;
 };
+
+export default combineReducers({
+  songs: songsReducer,
+  selectedSong: selectedSongReducer,
+});
